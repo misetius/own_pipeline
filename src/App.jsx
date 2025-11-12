@@ -134,7 +134,7 @@ const App = () => {
       <h2>Phonebook</h2>
       <div>
         <Filter onChange={filterPersons} />
-</div>
+      </div>
       <h2>Add a new</h2>
 
       <PersonForm handlePersonChange={handlePersonChange} handleNumberChange={handleNumberChange} addPerson={addPerson} newName={newName} newNumber={newNumber}/>

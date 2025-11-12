@@ -5,18 +5,18 @@ const baseUrl = '/api/persons'
 
 
 const getAll = () => {
-    return axios.get(baseUrl)
+  return axios.get(baseUrl)
 }
 const sendPersonData = (personObject) => {
-    return axios.post(baseUrl, personObject)
+  return axios.post(baseUrl, personObject)
 
 }
 const deletePerson = (id) => {
-    return axios.delete(`${baseUrl}/${id}`)
+  return axios.delete(`${baseUrl}/${id}`)
 }
 const changePersonNumber = (id, newObject) => {
-    const request = axios.put(`${baseUrl}/${id}`, newObject)
-    return request.then(response => response.data)
+  const request = axios.put(`${baseUrl}/${id}`, newObject)
+  return request.then(response => response.data)
 }
 
 
